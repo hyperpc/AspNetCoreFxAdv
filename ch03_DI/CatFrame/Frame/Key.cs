@@ -1,5 +1,5 @@
 using System;
-namespace CatFrame
+namespace CatFrame.Frame
 {
     internal class Key : IEquatable<Key>
     {

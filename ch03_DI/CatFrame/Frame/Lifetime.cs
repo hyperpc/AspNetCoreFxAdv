@@ -1,4 +1,4 @@
-namespace CatFrame
+namespace CatFrame.Frame
 {
     public enum Lifetime
     {

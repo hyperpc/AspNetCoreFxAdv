@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace CatFrame
+namespace CatFrame.Frame
 {
     public class ServiceRegistry
     {

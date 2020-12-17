@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System;
 using System.Linq;
 
-namespace CatFrame
+namespace CatFrame.Frame
 {
     public class Cat : IServiceProvider, IDisposable
     {
@@ -79,7 +79,7 @@ namespace CatFrame
                     return Array.CreateInstance(elType,0);
                 }
                 var registries = registry.AsEnumerable();
-                var services = registries.Select(it=>GetService(it, Type.EmptyTypes)).ToArray();
+                var services = registries.Select(it=>GetServiceCore(it, Type.EmptyTypes)).ToArray();
                 Array array = Array.CreateInstance(elType, services.Length);
                 services.CopyTo(array, 0);
                 return array;

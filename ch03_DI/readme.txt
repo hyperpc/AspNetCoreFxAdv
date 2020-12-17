@@ -1,0 +1,1 @@
+A simple DI container: CatFrame.
